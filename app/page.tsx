@@ -178,7 +178,7 @@ RULES: ${duration} days, 4-5 activities each. ALL real places in ${city}. 3 hote
               </div>
             </div>
           </section>
-          <section <section style={{paddingTop:40,paddingBottom:40,textAlign:"center",maxWidth:900,margin:"0 auto",paddingLeft:"clamp(16px,4vw,48px)",paddingRight:"clamp(16px,4vw,48px)"}}>>
+          <section style={{paddingTop:40,paddingBottom:40,textAlign:"center",maxWidth:900,margin:"0 auto",paddingLeft:"clamp(16px,4vw,48px)",paddingRight:"clamp(16px,4vw,48px)"}}>
             <button style={{...S.btn(true),padding:"15px 36px",fontSize:15}} onClick={()=>{setPage("create");setStep(0)}}>Create Your Guide &rarr;</button>
           </section>
         </div>}
@@ -187,7 +187,7 @@ RULES: ${duration} days, 4-5 activities each. ALL real places in ${city}. 3 hote
         {page==="create" && (()=>{
           const names=["Destination","Interests","Style","Notes","Review"];
           const ok=()=>{if(step===0)return !!city;if(step===1)return activities.length>0;if(step===2)return !!budget&&!!companions;return true};
-          return <div style={{padding:"32px 0",...S.container}}>
+          return <div style={{paddingTop:32,paddingBottom:0,maxWidth:900,margin:"0 auto",paddingLeft:"clamp(16px,4vw,48px)",paddingRight:"clamp(16px,4vw,48px)"}}>
             <div style={{textAlign:"center",marginBottom:28}}><h1 style={{...S.sTitle,fontSize:26}}>Create Your Quest</h1></div>
             <div style={{display:"flex",gap:3,marginBottom:24,maxWidth:520,margin:"0 auto 24px"}}>{names.map((n,i)=><div key={i} style={{flex:1}}><div style={{height:3,borderRadius:2,background:i<=step?"#0d9488":"#e8e2d9"}}/><div style={{fontSize:9,color:i<=step?"#0d9488":"#a8a29e",marginTop:4,fontWeight:i===step?700:400,textAlign:"center"}}>{n}</div></div>)}</div>
             <div style={{background:"white",borderRadius:18,border:"1.5px solid #e8e2d9",overflow:"hidden",maxWidth:640,margin:"0 auto"}}>
