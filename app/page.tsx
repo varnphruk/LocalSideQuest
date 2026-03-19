@@ -178,7 +178,7 @@ RULES: ${duration} days, 4-5 activities each. ALL real places in ${city}. 3 hote
               </div>
             </div>
           </section>
-          <section style={{padding:"40px 0",textAlign:"center",...S.container}}>
+          <section <section style={{paddingTop:40,paddingBottom:40,textAlign:"center",maxWidth:900,margin:"0 auto",paddingLeft:"clamp(16px,4vw,48px)",paddingRight:"clamp(16px,4vw,48px)"}}>>
             <button style={{...S.btn(true),padding:"15px 36px",fontSize:15}} onClick={()=>{setPage("create");setStep(0)}}>Create Your Guide &rarr;</button>
           </section>
         </div>}
