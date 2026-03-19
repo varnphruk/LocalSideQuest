@@ -164,7 +164,7 @@ RULES: ${duration} days, 4-5 activities each. ALL real places in ${city}. 3 hote
 
         {/* HOME */}
         {page==="home" && <div>
-          <section style={{padding:"clamp(60px,10vw,100px) 0",...S.container}}>
+          <section style={{paddingTop:"clamp(60px,10vw,100px)",paddingBottom:"clamp(60px,10vw,100px)",maxWidth:900,margin:"0 auto",paddingLeft:"clamp(16px,4vw,48px)",paddingRight:"clamp(16px,4vw,48px)"}}>
             <div style={{display:"grid",gridTemplateColumns:"1.1fr 0.9fr",gap:48,alignItems:"center"}}>
               <div>
                 <div style={{display:"inline-block",background:"#ccfbf1",color:"#115e59",padding:"6px 16px",borderRadius:20,fontSize:12,fontWeight:700,letterSpacing:"0.05em",textTransform:"uppercase",marginBottom:24}}>AI Travel Planner</div>
